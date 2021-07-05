@@ -1,0 +1,535 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://example.com/2021/07/05/Linux%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%91%BD%E4%BB%A4/">
+
+
+
+  <title>
+Linux好玩的命令 |
+Yume Shoka = Hexo</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Linux好玩的命令
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-07-05 23:07:18">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-07-05T23:07:18+08:00">2021-07-05</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/05/Linux%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%91%BD%E4%BB%A4/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>[toc]</p>
+<h2 id="1、sl-命令"><a href="#1、sl-命令" class="headerlink" title="1、sl 命令"></a>1、sl 命令</h2><p>​    你会看到一辆火车从屏幕右边开往左边……</p>
+<p>​    当然我们需要先安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install sl</span><br></pre></td></tr></table></figure>
+
+<p>​    然后运行<code>sl</code>即可看到效果：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPo4dObv6KZJyMoILRvsBKdvRAf3ibHa8xNE9pj2WJ2SgLgOd4bVlSAcw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="2、fortune"><a href="#2、fortune" class="headerlink" title="2、fortune"></a>2、fortune</h2><p>​    输出一句话，有笑话，名言什么的 （还有唐诗宋词）。</p>
+<p>​    软件包安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install fortune</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPBgA6W9cnBwtjQtEvYy2GNicLvDcxWlBibibib00p0Q8fGiaeurTzMC6oJnA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    这些都是英文的，如果你想看中国的唐诗三百首，则需要再安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install fortune-zh</span><br></pre></td></tr></table></figure>
+
+<p>​    来多执行几次<code>fortune-zh</code>，可以看到不同的唐诗：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPeCfgTeHs9xf3Pica7qT59fWyia5LZJLP2hRxmQuzGekF5kOpHibPMUiaTg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="3、cowsay"><a href="#3、cowsay" class="headerlink" title="3、cowsay"></a>3、cowsay</h2><p>​    用ASCII字符打印牛、羊等动物。</p>
+<p>​    也是需要先安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install cowsay</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPnUfTQsCYsU3X67Uj1W7kict2kiaGQN294WplbarIZHh9MC6Gxro0Q8JA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    还有一种骚操作是 <strong>cowsay -l</strong> 查看其它动物的名字，然后 <strong>-f</strong> 跟上动物名，如：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPjUY4nIdHQtoC793Rc9hyYe0490QicJYWkibD6Obgibl1E5f7VmeDUtB1Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="4、cmatrix"><a href="#4、cmatrix" class="headerlink" title="4、cmatrix"></a>4、cmatrix</h2><p>​    这个就很酷，有《黑客帝国》那种矩阵风格的动画效果。</p>
+<p>​    先安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install cmatrix</span><br></pre></td></tr></table></figure>
+
+<p>​    运行<code>cmatrix</code>命令即可：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPzgzchiaicTb96kpGQ5uggEdFEBFjaGAqQWWdGicoBSxKteImWZQXGhzgA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="5、figlet-、toilet"><a href="#5、figlet-、toilet" class="headerlink" title="5、figlet 、toilet"></a>5、figlet 、toilet</h2><p>​    艺术字生成器，由 ASCII 字符组成，把文本显示成标题栏。</p>
+<p>​    先安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install figlet</span><br><span class="line">sudo apt-get install toilet</span><br></pre></td></tr></table></figure>
+
+<p>​    运行：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPMe7vN1ep7voVKrwhNqohva2zOL7JibPIU1SQK1L1jwI3W8RicwbgrfyQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">toilet 还可以添加颜色：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPC4gdSp9RNAhibxf0DRzvvEicbKDycETID7q9wpWWTiakIN2kEeONYwicBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="6、-oneko"><a href="#6、-oneko" class="headerlink" title="6、 oneko"></a>6、 oneko</h2><p>​    桌面上出现一只喵星人，跟着你的鼠标跑，你不动了它就睡觉。</p>
+<p>​    软件包安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install oneko</span><br></pre></td></tr></table></figure>
+
+<p>​    直接<code>oneko</code>命令运行：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSP0ptTIvibIhfibP19HWXgzlcFmUwhlCjvJp5lkRhmiaKrx9BgB8icDULfMw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>​    要关掉这个小家伙，直接 <code>ctrl + c</code> 即可。</p>
+<h2 id="7、screenfetch"><a href="#7、screenfetch" class="headerlink" title="7、screenfetch"></a>7、screenfetch</h2><p>​    这个命令可以用来显示系统、主题信息。</p>
+<p>​    软件包安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install screenfetch</span><br></pre></td></tr></table></figure>
+
+<p>​    直接运行<code>screenfetch</code>命令即可：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPV8XHe2eeaxn2KCZ981jS1cssCSr1ApyleA5LNFEpibdia1zqCYiakxO8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="8、linux-logo"><a href="#8、linux-logo" class="headerlink" title="8、linux_logo"></a>8、linux_logo</h2><p>​    这个命令可以用来显示 linux 版本 logo 图片及系统信息。</p>
+<p>​    安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install linuxlogo</span><br></pre></td></tr></table></figure>
+
+<p>​    直接运行<code>linux_logo</code>命令即可：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPYezCHTPKwrjOrd8r7Mp0oyjMK4JmEB4zvHTRanwxq4Tjhy6BnKog9Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    我们可以查看内置的 logo 列表：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPcWHhdCOjE16d5pqujejkfAyrMOjiakHKNERkWoVNyGkaxUEkm5oE5Kw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    接下来我们开始利用命令在终端循环打印 logo：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for i in &#123;1..30&#125;;do linux_logo -f -L $i;sleep 2;done</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPoawuWUMA3qxqAnrnRTbIxu3SpgHk2lrHusbAhyG7x6VqUx7rON5hCw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="9、boxes"><a href="#9、boxes" class="headerlink" title="9、boxes"></a>9、boxes</h2><p>​    这个命令可以实现在输入的文本或者代码周围框上各种 ASCII 艺术画，非常有趣！</p>
+<p>​    首先安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install boxes</span><br></pre></td></tr></table></figure>
+
+<p>​    现在我把一段文字不加任何效果输出是这样的：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPk1K5PEedlPibT7WCNcwCn84qLxQficwibFmReFs0UvNibgfJ2qgKWITn2w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    现在加上小猫的图案：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPtVUic0U8CFLZnebjA7gicY3nKTxH3ricSqwlGEJBjIK1Uo0qhhyE6kVpg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    亦或者小狗：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPrqgBxkX3HIicXxWibbFNeECW4PBPCO3ZiapficuibnOoicTQgtb04iamF4eng/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    小老鼠：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPGC22M364FORKHF4WPAuT2z6uQDyUHV4QMZvMVgeAHh7SibbuG8oT6lw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片">    更多的效果就不展示了，等待着你们去发现~</p>
+<h2 id="10、pv"><a href="#10、pv" class="headerlink" title="10、pv"></a>10、pv</h2><p>​    有时候我们在电影屏幕上看到一些字幕一个个匀速显示出来，像有人在边敲键盘，边显示一样。Linux 上的 pv 命令可以实现这种效果。</p>
+<p>​    首先安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install pv</span><br></pre></td></tr></table></figure>
+
+<p>​    这里我用英文座右铭运行实验：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPnibgotk2iaic2YpkEtkQnGmq4GBMxLTxP0TpQOicZUib8GNA6icOzFSdB88g/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="11、aview"><a href="#11、aview" class="headerlink" title="11、aview"></a>11、aview</h2><p>​    这个命令可以将图片以 ASCII 码格式在终端上显示，有点 cool。</p>
+<p>​    安装软件包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install aview</span><br></pre></td></tr></table></figure>
+
+<p>​    执行命令，将一张大象的图片 <strong>elephant.jpg</strong> 进行转码显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asciiview elephant.jpg -driver curses</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPL1QvYfvw2lERicpR9s26K1sAuTgQe7bImtUmibzeiaA9cj71ibf5qWMb2g/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="12、ASCIIquarium"><a href="#12、ASCIIquarium" class="headerlink" title="12、ASCIIquarium"></a>12、ASCIIquarium</h2><p>​    这是一个相当有趣的命令，你可以在你的终端中使用 <code>ASCIIQuarium</code> 安全地欣赏海洋的神秘了。</p>
+<p>​    是不是听起来相当神奇，快来尝试下吧！</p>
+<p>​    首先需要安装 <strong>Term::Animation</strong> 的 <strong>perl</strong> 模块：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install libcurses-perl</span><br><span class="line">$ cd /tmp</span><br><span class="line">$ wget http://search.cpan.org/CPAN/authors/id/K/KB/KBAUCOM/Term-Animation-2.4.tar.gz</span><br><span class="line">$ tar -zxvf Term-Animation-2.4.tar.gz</span><br><span class="line">$ cd Term-Animation-2.4/</span><br><span class="line">$ perl Makefile.PL &amp;&amp; make &amp;&amp; make test</span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
+
+<p>​    然后才开始安装<code>ASCIIQuarium</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd /tmp</span><br><span class="line">$ wget http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz</span><br><span class="line">$ tar -zxvf asciiquarium.tar.gz</span><br><span class="line">$ cd asciiquarium_1.0/</span><br><span class="line">$ sudo cp asciiquarium /usr/local/bin</span><br><span class="line">$ sudo chmod 0755 /usr/local/bin/asciiquarium</span><br></pre></td></tr></table></figure>
+
+<p>​    现在通过命令<code>/usr/local/bin/asciiquarium</code>或者<code>perl /usr/local/bin/asciiquarium</code>即可欣赏到 ASCII 水族箱：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPyLlrq3iaF4pTyR0ic3AHqHw65TdQ4KZXlSic4mns8vl3z2SCjnSczxIbw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="13、blessed-contrib"><a href="#13、blessed-contrib" class="headerlink" title="13、blessed-contrib"></a>13、blessed-contrib</h2><p>​    想拥有一个高大上仪表盘，假装自己指点江山、纵横捭阖吗？快来试试下面这款！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install npm</span><br><span class="line">sudo apt install nodejs-legacy</span><br><span class="line">git clone https://github.com/yaronn/blessed-contrib.git</span><br><span class="line">cd blessed-contrib</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>​    然后通过命令<code>node ./examples/dashboard.js</code>就可以欣赏高大上黑客仪表盘：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPbp4WzicOH9a52hXcbP2oiaucvbPybhHaZ6P17CEjia2vRb43qXrJUf2QQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h2 id="14、hollywood"><a href="#14、hollywood" class="headerlink" title="14、hollywood"></a>14、hollywood</h2><p>​    高大上仪表盘，假装自己日理万机，宵衣旰食。听起来是不是很不错。Dustin Kirkland 利用一个长途飞行的时间，编写了这个炫酷、有趣但也没什么实际作用的软件。 在其它 Linux 发行版中，可以通过以下命令安装。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-add-repository ppa:hollywood/ppa</span><br><span class="line">sudo apt-get install hollywood</span><br><span class="line">sudo apt-get install byobu</span><br></pre></td></tr></table></figure>
+
+<p>​    然后通过<code>hollywood</code>这个命令即可欣赏到一个炫酷的界面：</p>
+<p><img data-src="https://mmbiz.qpic.cn/sz_mmbiz_gif/BFibC8wtke3u3KIlpzRpxCN8hAoicFfLSPdmsSxsdEk8LTXndE3uBVNtZXkq8a3cINia1HTx6VYaT2ZqTFuOglG3g/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>- END -</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-07-05 23:13:55" itemprop="dateModified" datetime="2021-07-05T23:13:55+08:00">2021-07-05</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/07/05/Linux%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%91%BD%E4%BB%A4/" title="Linux好玩的命令">http://example.com/2021/07/05/Linux好玩的命令/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2021/07/05/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="Hello World">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Hello World</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2021/07/05/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclg5ms2rj20zk0m8u0x.jpg" title="Linux常用命令">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Linux常用命令</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81sl-%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">1、sl 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81fortune"><span class="toc-number">2.</span> <span class="toc-text">2、fortune</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81cowsay"><span class="toc-number">3.</span> <span class="toc-text">3、cowsay</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81cmatrix"><span class="toc-number">4.</span> <span class="toc-text">4、cmatrix</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81figlet-%E3%80%81toilet"><span class="toc-number">5.</span> <span class="toc-text">5、figlet 、toilet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81-oneko"><span class="toc-number">6.</span> <span class="toc-text">6、 oneko</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81screenfetch"><span class="toc-number">7.</span> <span class="toc-text">7、screenfetch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81linux-logo"><span class="toc-number">8.</span> <span class="toc-text">8、linux_logo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E3%80%81boxes"><span class="toc-number">9.</span> <span class="toc-text">9、boxes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10%E3%80%81pv"><span class="toc-number">10.</span> <span class="toc-text">10、pv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E3%80%81aview"><span class="toc-number">11.</span> <span class="toc-text">11、aview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12%E3%80%81ASCIIquarium"><span class="toc-number">12.</span> <span class="toc-text">12、ASCIIquarium</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13%E3%80%81blessed-contrib"><span class="toc-number">13.</span> <span class="toc-text">13、blessed-contrib</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14%E3%80%81hollywood"><span class="toc-number">14.</span> <span class="toc-text">14、hollywood</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">6</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2021/07/05/hello-world/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2021/07/05/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/mysql/" title="MySQL">MySQL</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/Linux%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%91%BD%E4%BB%A4/" title="Linux好玩的命令">Linux好玩的命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/Liunx%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85/" title="Linux虚拟机安装">Linux虚拟机安装</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/MD%E6%96%87%E6%A1%A3%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%AD%A6%E4%B9%A0/" title="MD文档流程图学习">MD文档流程图学习</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Linux常用命令">Linux常用命令</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/07/05/Linux好玩的命令/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

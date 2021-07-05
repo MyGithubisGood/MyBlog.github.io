@@ -1,0 +1,463 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://example.com/2021/07/05/Liunx%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85/">
+
+
+
+  <title>
+Linux虚拟机安装 |
+Yume Shoka = Hexo</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Linux虚拟机安装
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-07-05 23:07:25">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-07-05T23:07:25+08:00">2021-07-05</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/05/Liunx%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>Linux，全称GNU/Linux，是一种免费使用和自由传播的类UNIX操作系统，其内核由林纳斯·本纳第克特·托瓦兹于1991年10月5日首次发布，它主要受到Minix和Unix思想的启发，是一个基于POSIX的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的Unix工具软件、应用程序和网络协议。它支持32位和64位硬件。Linux继承了Unix以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。Linux有上百种不同的发行版，如基于社区开发的debian、archlinux，和基于商业开发的Red Hat Enterprise Linux、SUSE、Oracle Linux等。</p>
+<p>Linux不仅系统性能稳定，而且是开源软件。其核心防火墙组件性能高效、配置简单，保证了系统的安全。在很多企业网络中，为了追求速度和安全，Linux不仅仅是被网络运维人员当作服务器使用，甚至当作网络防火墙，这是Linux的一大亮点。<br>Linux具有开放源码、没有版权、技术社区用户多等特点，开放源码使得用户可以自由裁剪，灵活性高，功能强大，成本低。尤其系统中内嵌网络协议栈，经过适当的配置就可实现路由器的功能。这些特点使得Linux成为开发路由交换设备的理想开发平台。 </p>
+<h3 id="以上都是废话，想了解更多请百度，搜狗，谷歌"><a href="#以上都是废话，想了解更多请百度，搜狗，谷歌" class="headerlink" title="以上都是废话，想了解更多请百度，搜狗，谷歌"></a>以上都是废话，想了解更多请百度，搜狗，谷歌</h3><h1 id="安装虚拟机VM为例："><a href="#安装虚拟机VM为例：" class="headerlink" title="安装虚拟机VM为例："></a>安装虚拟机VM为例：</h1><p>VMware下载和安装<br>绝大多数初学者使用的是 Windows，所以本节只讲解在 Windows 下安装 VMware 和 Linux。</p>
+<p>VMware 有两个版本，分别是 VMware Workstation Pro 和 VMware Workstation Player。<br>Player 是免费版本，只能用于非商业用途，适合个人学习。<br>Pro 是商业版本，功能最强大，付费以后才能使用。</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601210627155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601210701705.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601210716188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/2021060121231750.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601212348788.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>同意条款 下一步<br><img data-src="https://img-blog.csdnimg.cn/20210601210745775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>选择自己安装的位置</li>
+</ul>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601210757964.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>勾选 下一步</li>
+</ul>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601210815275.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601210843992.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601210852521.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601210901373.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601210909983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601210918445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="安装Linux"><a href="#安装Linux" class="headerlink" title="安装Linux"></a>安装Linux</h1><p><img data-src="https://img-blog.csdnimg.cn/20210601211108418.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击“创建新的虚拟机”，进入虚拟机设置向导界面，如下图所示，这里建议初学者选择“典型（推荐）”。<img data-src="https://img-blog.csdnimg.cn/20210601211124476.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211137262.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>建议初学者提前下载好 CenOS 映像系统，给大家提供 CentOS 6.5 映像文件迅雷下载地址（点击链接或复制链接到迅雷即可开始下载）：<br>32 位 CentOS 6.5 映像下载：<span class="exturl" data-url="aHR0cDovL2FyY2hpdmUua2VybmVsLm9yZy9jZW50b3MtdmF1bHQvNi41L2lzb3MvaTM4Ni9DZW50T1MtNi41LWkzODYtYmluLURWRDEuaXNv">http://archive.kernel.org/centos-vault/6.5/isos/i386/CentOS-6.5-i386-bin-DVD1.iso</span><br>64 位 CentOS 6.5 映像下载：<span class="exturl" data-url="aHR0cDovL2FyY2hpdmUua2VybmVsLm9yZy9jZW50b3MtdmF1bHQvNi41L2lzb3MveDg2XzY0L0NlbnRPUy02LjUteDg2XzY0LWJpbi1EVkQxLmlzbw==">http://archive.kernel.org/centos-vault/6.5/isos/x86_64/CentOS-6.5-x86_64-bin-DVD1.iso</span></p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211227906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601211238916.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>单击”下一步”按钮，进入”指定磁盘容量”界面。默认虚拟硬盘大小为 20GB（虚拟硬盘会以文件形式存放在虚拟机系统安装目录中）。虚拟硬盘的空间可以根据需要调整大小，但不用担心其占用的空间，因为实际占用的空间还是以安装的系统大小而非此处划分的硬盘大小为依据的。<br>比如你设定了硬盘容量为 20GB，但是安装 Linux 只用了 4GB，那么实际上只会在你的 Windows 分区中占用 4GB 的空间，占用空间会随着虚拟机系统使用的空间增加而增加。</p>
+<p>此“指定磁盘容量”界面保持默认设置即可，如下图所示。</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211313917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/20210601211325912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这里，我们可以略做调整，单击”自定义硬件”按钮进入硬件调整界面。为了让虚拟机中的系统运行速度快一点，我们可以选择”内存”调整虚拟机内存大小，但是建议虚拟机内存不要超过宿主机内存的一半。CentOS6.x 最少需要 628MB 及以上内存分配，否则会开启简易安装过程</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211348854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>选择“新CD/DVD(IDE)”可以选择光驱配置。如果选择“使用物理驱动器”，则虚拟机会使用宿主机的物理光驱；如果选择“使用 ISO 映像文件”，则可以直接加载 ISO 映像文件，单击“浏览”按钮找到 ISO 映像文件位置即可<br><img data-src="https://img-blog.csdnimg.cn/20210601211404572.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>选择”网络适配器”将进入 VMware 新手设置中最难以理解的部分——设置网络类型，如图 10 所示。此设置较复杂，不过网络适配器配置在虚拟机系统安装完成后还可以再行修改。</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211421987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>VMware 提供的网络连接有 5 种，分别是”桥接模式”、”NAT 模式”、”仅主机模式”、”自定义”和”LAN 区段”：<br>桥接模式：相当于虚拟机的网卡和宿主机的物理网卡均连接到虚拟机软件所提供的 VMnet0 虚拟交换机上，因此虚拟机和宿主机是平等的，相当于一个网络中的两台计算机。这种设置既可以保证虚拟机和宿主机通信，也可以和局域网内的其他主机通信，还可以连接 Internet，是限制最少的连接方式，推荐新手使用。<br>NAT 模式：相当于虚拟机的网卡和宿主机的虚拟网卡 VMnet8 连接到虚拟机软件所提供的 VMnet8 虚拟交换机上，因此本机是通过 VMnet8 虚拟网卡通信的。在这种网络结构中，VMware 为虚拟机提供了一个虚拟的 NAT 服务器和一个虚拟的 DHCP 服务器，虚拟机利用这两个服务器可以连接到 Intemet。所以，在正常情况下，虚拟机系统只要设定自动获取 IP 地址，就能既和宿主机通信，又能连接到 Internet了。但是这种设置不能连接局域网内的其他主机。<br>仅主机模式：宿主机和虚拟机通信使用的是 VMware 的虚拟网卡 VMnet1，但是这种连接没有 NAT 服务器为虚拟机提供路由功能，所以仅主机网络只能连接宿主机，不能连接局域网，也不能连接 Internet 网络。<br>自定义网络：可以手工选择使用哪块虚拟机网卡。如果选择 Vmnet1，就相当于桥接网络；如果选择 VMnet8，就相当于 NAT 网络。<br>LAN 区段：这是新版 VMware 新增的功能，类似于交换机中的 VLAN（虚拟局域网），可以在多台虚拟机中划分不同的虚拟网络。</p>
+<h3 id="以上对于-VMware-网络的描述，读者看完了可能会有点困惑。简单总结—下，在-VMware-安装好后，会生成两个虚拟网卡-VMnet1-和-VMnet8-在-Windows-系统的”网络连接”中可以査看到）"><a href="#以上对于-VMware-网络的描述，读者看完了可能会有点困惑。简单总结—下，在-VMware-安装好后，会生成两个虚拟网卡-VMnet1-和-VMnet8-在-Windows-系统的”网络连接”中可以査看到）" class="headerlink" title="以上对于 VMware 网络的描述，读者看完了可能会有点困惑。简单总结—下，在 VMware 安装好后，会生成两个虚拟网卡 VMnet1 和 VMnet8 (在 Windows 系统的”网络连接”中可以査看到）"></a>以上对于 VMware 网络的描述，读者看完了可能会有点困惑。简单总结—下，在 VMware 安装好后，会生成两个虚拟网卡 VMnet1 和 VMnet8 (在 Windows 系统的”网络连接”中可以査看到）</h3><ul>
+<li>虚拟网卡<br><img data-src="https://img-blog.csdnimg.cn/20210601211505207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ul>
+<p>其中常用设置有以下 2 种：<br>需要宿主机的 Windows 和虚拟机的 Linux 能够进行网络连接，使用”桥接模式”（桥接时，Linux 也可以访问互联网，只是虚拟机需要配置和宿主机 Windows 同样的联网环境）；<br>需要宿主机的 Windows 和虚拟机的 Linux 能够进行网络连接，同时虚拟机的 Linux 可以通过宿主机的 Windows 连入互联网，使用”NAT模式”。</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211535648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如果在第三步选择“稍后安装操作系统”的，此时必须先下载某个 Linux 映像文件，并通过“编辑虚拟机设置-&gt;CD/DVD（IDE）”中，选择“使用ISO映像文件”，手动添加 iso 文件，然后点击“确定”即可手动开启 Linux 系统</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20210601211548469.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkwNzQ4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="以上完成-虚拟机及Linux的安装"><a href="#以上完成-虚拟机及Linux的安装" class="headerlink" title="# 以上完成 虚拟机及Linux的安装"></a># 以上完成 虚拟机及Linux的安装</h1>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-07-05 23:18:56" itemprop="dateModified" datetime="2021-07-05T23:18:56+08:00">2021-07-05</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/07/05/Liunx%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85/" title="Linux虚拟机安装">http://example.com/2021/07/05/Liunx虚拟机安装/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2021/07/05/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicivghyooj20zk0m8dir.jpg" title="Linux常用命令">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Linux常用命令</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2021/07/05/mysql/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="MySQL">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>MySQL</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8A%E9%83%BD%E6%98%AF%E5%BA%9F%E8%AF%9D%EF%BC%8C%E6%83%B3%E4%BA%86%E8%A7%A3%E6%9B%B4%E5%A4%9A%E8%AF%B7%E7%99%BE%E5%BA%A6%EF%BC%8C%E6%90%9C%E7%8B%97%EF%BC%8C%E8%B0%B7%E6%AD%8C"><span class="toc-number">1.0.1.</span> <span class="toc-text">以上都是废话，想了解更多请百度，搜狗，谷歌</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BAVM%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">安装虚拟机VM为例：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Linux"><span class="toc-number">3.</span> <span class="toc-text">安装Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8A%E5%AF%B9%E4%BA%8E-VMware-%E7%BD%91%E7%BB%9C%E7%9A%84%E6%8F%8F%E8%BF%B0%EF%BC%8C%E8%AF%BB%E8%80%85%E7%9C%8B%E5%AE%8C%E4%BA%86%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%82%B9%E5%9B%B0%E6%83%91%E3%80%82%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93%E2%80%94%E4%B8%8B%EF%BC%8C%E5%9C%A8-VMware-%E5%AE%89%E8%A3%85%E5%A5%BD%E5%90%8E%EF%BC%8C%E4%BC%9A%E7%94%9F%E6%88%90%E4%B8%A4%E4%B8%AA%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1-VMnet1-%E5%92%8C-VMnet8-%E5%9C%A8-Windows-%E7%B3%BB%E7%BB%9F%E7%9A%84%E2%80%9D%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E2%80%9D%E4%B8%AD%E5%8F%AF%E4%BB%A5%E6%9F%BB%E7%9C%8B%E5%88%B0%EF%BC%89"><span class="toc-number">3.0.1.</span> <span class="toc-text">以上对于 VMware 网络的描述，读者看完了可能会有点困惑。简单总结—下，在 VMware 安装好后，会生成两个虚拟网卡 VMnet1 和 VMnet8 (在 Windows 系统的”网络连接”中可以査看到）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8A%E5%AE%8C%E6%88%90-%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8F%8ALinux%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">4.</span> <span class="toc-text"># 以上完成 虚拟机及Linux的安装</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">6</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2021/07/05/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2021/07/05/mysql/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/Linux%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%91%BD%E4%BB%A4/" title="Linux好玩的命令">Linux好玩的命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/mysql/" title="MySQL">MySQL</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/Liunx%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85/" title="Linux虚拟机安装">Linux虚拟机安装</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/MD%E6%96%87%E6%A1%A3%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%AD%A6%E4%B9%A0/" title="MD文档流程图学习">MD文档流程图学习</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/05/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Linux常用命令">Linux常用命令</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/07/05/Liunx虚拟机安装/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
